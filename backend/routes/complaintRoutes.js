@@ -5,7 +5,8 @@ const {
 
    addComplaint,
    getComplaints,
-   updateComplaint
+   updateComplaint,
+   deleteComplaint
 
 } =
 require("../controllers/complaintController");
@@ -35,6 +36,11 @@ router.get(
 router.put(
    "/:id",
    updateComplaint
+);
+
+router.delete(
+   "/:id",
+   deleteComplaint
 );
 
 module.exports = router;

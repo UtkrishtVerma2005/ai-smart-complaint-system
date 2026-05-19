@@ -46,3 +46,15 @@ async(req,res)=>{
 
    res.json(updated);
 };
+
+exports.deleteComplaint =
+async(req,res)=>{
+
+   await Complaint.findByIdAndDelete(
+      req.params.id
+   );
+
+   res.json({
+      message:"Complaint Deleted"
+   });
+};
