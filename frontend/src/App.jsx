@@ -1,19 +1,25 @@
 import {
-   BrowserRouter,
+
+   HashRouter,
+
    Routes,
+
    Route
+
 }
 from "react-router-dom";
 
 import Login from "./pages/Login";
+
 import Signup from "./pages/Signup";
+
 import Home from "./pages/Home";
 
 function App(){
 
    return(
 
-      <BrowserRouter>
+      <HashRouter>
 
          <Routes>
 
@@ -34,7 +40,7 @@ function App(){
 
          </Routes>
 
-      </BrowserRouter>
+      </HashRouter>
    );
 }
 
