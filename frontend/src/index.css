@@ -1,0 +1,445 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+    135deg,
+    #f5f1e8,
+    #f8f4ec
+  );
+
+  padding:20px;
+}
+
+/* MAIN LAYOUT */
+
+.main-layout{
+
+  width:100%;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:40px;
+
+  align-items:center;
+}
+
+/* CONTAINER */
+
+.container{
+
+  width:100%;
+
+  max-width:850px;
+
+  background:white;
+
+  padding:50px 60px;
+
+  border-radius:28px;
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,0.12);
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.title{
+
+  text-align:center;
+
+  font-size:54px;
+
+  color:#222;
+
+  margin-top:20px;
+
+  margin-bottom:45px;
+
+  font-weight:700;
+
+  line-height:1.2;
+}
+
+/* FORM */
+
+form{
+
+  width:100%;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:24px;
+}
+
+.input-box{
+
+  width:100%;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:10px;
+}
+
+.input-box label{
+
+  font-size:18px;
+
+  color:#444;
+
+  font-weight:700;
+}
+
+input,
+textarea{
+
+  width:100%;
+
+  padding:18px 20px;
+
+  border:1px solid #ccc;
+
+  border-radius:14px;
+
+  font-size:18px;
+
+  outline:none;
+
+  transition:0.3s;
+
+  background:#fff;
+}
+
+textarea{
+
+  height:150px;
+
+  resize:none;
+}
+
+input:focus,
+textarea:focus{
+
+  border-color:#ff8c42;
+
+  box-shadow:
+  0 0 12px rgba(255,140,66,0.3);
+}
+
+/* BUTTONS */
+
+button{
+
+  margin-top:10px;
+
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:40px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #00c853,
+    #00e676
+  );
+
+  color:white;
+
+  font-size:22px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 10px 22px rgba(0,200,83,0.3);
+}
+
+.logout-btn{
+
+  margin-bottom:35px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #ff5252,
+    #ff1744
+  );
+}
+
+.logout-btn:hover{
+
+  box-shadow:
+  0 8px 20px rgba(255,82,82,0.3);
+}
+
+/* SMALL DELETE BUTTON */
+
+.delete-btn{
+
+  margin-top:18px;
+
+  width:auto;
+
+  padding:12px 24px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #ff5252,
+    #ff1744
+  );
+
+  color:white;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.delete-btn:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:
+  0 8px 18px rgba(255,82,82,0.3);
+}
+
+/* LOGIN REGISTER */
+
+.switch-text{
+
+  margin-top:25px;
+
+  text-align:center;
+
+  font-size:18px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+}
+
+.register-line{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:10px;
+}
+
+.switch-text span{
+
+  color:#444;
+}
+
+.switch-text a{
+
+  text-decoration:none;
+
+  color:#2962ff;
+
+  font-weight:600;
+}
+
+.switch-text a:hover{
+
+  text-decoration:underline;
+}
+
+/* DESIGN CIRCLES */
+
+.circle1{
+
+  position:absolute;
+
+  width:180px;
+
+  height:180px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff9966,
+    #ff5e62
+  );
+
+  border-radius:50%;
+
+  top:-70px;
+
+  right:-70px;
+
+  z-index:-1;
+}
+
+.circle2{
+
+  position:absolute;
+
+  width:140px;
+
+  height:140px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ffcc70,
+    #ff8177
+  );
+
+  border-radius:50%;
+
+  bottom:-60px;
+
+  left:-60px;
+
+  z-index:-1;
+}
+
+/* COMPLAINT SECTION */
+
+.complaints-section{
+
+  width:100%;
+
+  max-width:850px;
+}
+
+.complaint-heading{
+
+  text-align:center;
+
+  font-size:38px;
+
+  margin-bottom:40px;
+
+  color:#222;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+}
+
+/* CARD */
+
+.card{
+
+  background:#ffffff;
+
+  border-radius:22px;
+
+  padding:30px;
+
+  margin-bottom:35px;
+
+  box-shadow:
+  0 8px 25px rgba(0,0,0,0.08);
+
+  transition:all 0.3s ease;
+}
+
+.card:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card h3{
+
+  color:#00c853;
+
+  margin-bottom:18px;
+
+  font-size:30px;
+
+  font-weight:700;
+}
+
+.card p{
+
+  margin-bottom:14px;
+
+  font-size:18px;
+
+  color:#444;
+
+  line-height:1.7;
+}
+
+/* AI BOX */
+
+.ai-box{
+
+  margin-top:25px;
+
+  background:#f1fbf4;
+
+  border-left:6px solid #00c853;
+
+  padding:22px;
+
+  border-radius:16px;
+}
+
+.ai-box h4{
+
+  color:#00c853;
+
+  margin-bottom:14px;
+
+  font-size:24px;
+
+  font-weight:700;
+}
+
+.ai-box p{
+
+  margin-bottom:10px;
+
+  color:#333;
+
+  font-size:17px;
+}
