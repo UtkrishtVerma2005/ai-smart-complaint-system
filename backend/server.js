@@ -18,6 +18,15 @@ app.use(cors());
 
 app.use(express.json());
 
+/* HOME ROUTE */
+
+app.get("/",(req,res)=>{
+
+   res.send(
+      "AI Smart Complaint System Backend Running"
+   );
+});
+
 app.use(
    "/api/auth",
    require("./routes/authRoutes")
